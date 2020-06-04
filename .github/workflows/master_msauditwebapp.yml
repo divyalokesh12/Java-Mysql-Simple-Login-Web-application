@@ -28,5 +28,5 @@ jobs:
       with:
         app-name: 'msauditwebapp'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_7052db30a4384205aa1591664c232e2c }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_cf7d7a380d574a53b04c8e3891e5b544 }}
         package: '${{ github.workspace }}/target/*.war'
