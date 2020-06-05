@@ -18,7 +18,7 @@ jobs:
     - name: Set up Java version
       uses: actions/setup-java@v1
       with:
-        java-version: '8'
+        java-version: '11'
 
     - name: Build with Maven
       run: mvn clean install
@@ -28,5 +28,5 @@ jobs:
       with:
         app-name: 'msauditwebapp'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_cf7d7a380d574a53b04c8e3891e5b544 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_6906ba9e36c74403b2ab3aa031f1a27d }}
         package: '${{ github.workspace }}/target/*.war'
